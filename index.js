@@ -10,6 +10,7 @@ app.use(express.json());
 
 // routes
 app.use('/auth/user', require('./routes/authRoutes'));
+app.use('/user/profile', require('./routes/userRoutes'));
 
 app.get("/", (req, res)=>{
     res.send("My Indiaa backend application.");
