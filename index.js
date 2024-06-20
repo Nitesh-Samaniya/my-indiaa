@@ -13,6 +13,7 @@ app.use('/auth/user', require('./routes/authRoutes'));
 app.use('/user/profile', require('./routes/userRoutes'));
 app.use('/product', require('./routes/productRoutes'));
 app.use('/cart', require('./routes/cartRoutes'));
+app.use('/orders', require('./routes/orderRoutes'));
 
 app.get("/", (req, res)=>{
     res.send("My Indiaa backend application.");
