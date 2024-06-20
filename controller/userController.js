@@ -1,9 +1,5 @@
 const User = require("../models/User");
 
-exports.checkRoute = (req,res)=>{
-    res.send("check")
-}
-
 exports.getProfile = async (req,res)=>{
     const userId = req.params.id;
     try {
