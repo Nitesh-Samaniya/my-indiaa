@@ -1,6 +1,9 @@
 const jwt = require('jsonwebtoken');
 
 const authMiddleWare = (req, res, next)=>{
+    if(!req.header('Authorization')){
+        return res.status(400).json({message: 'Token required to proceed.'})
+    }
     const token = req.header('Authorization').replace('Bearer', '');
 
     if(!token){
