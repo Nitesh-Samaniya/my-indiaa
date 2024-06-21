@@ -1,7 +1,7 @@
 const User = require("../models/User");
 
 exports.getProfile = async (req,res)=>{
-    const userId = req.params.id;
+    const userId = req.user.id;
     try {
         const user = await User.findById(userId, {password: 0});
         if(!user){

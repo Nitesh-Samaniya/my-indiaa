@@ -120,14 +120,13 @@
         }
       }
     },
-    "/user/profile/{id}": {
+    "/user/profile/": {
       "get": {
         "description": "",
         "parameters": [
           {
-            "name": "id",
-            "in": "path",
-            "required": true,
+            "name": "Authorization",
+            "in": "header",
             "type": "string"
           }
         ],
@@ -137,6 +136,9 @@
           },
           "400": {
             "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
           },
           "500": {
             "description": "Internal Server Error"
