@@ -1,5 +1,7 @@
 # E-commerce Backend API
 
+### swagger doc link: https://my-indiaa.onrender.com/doc/
+
 This project is a backend implementation for an e-commerce platform. It includes role based access for customer, seller and admin, User authentication, product management, a shopping cart system, stripe payment gateway, and order tracking. The backend is built using Node.js, Express, and MongoDB, with API documentation provided via Swagger.
 
 ## Table of Contents
